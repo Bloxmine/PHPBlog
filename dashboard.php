@@ -10,12 +10,12 @@ $result = $conn->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/dashboard.css">
-<title>Dashboard</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/dashboard.css">
+        <title>Dashboard</title>
+    </head>
 <body>
 <h2>Baby's First PHP Blog</h2>
 <div class="top-right-buttons">
