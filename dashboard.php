@@ -26,12 +26,12 @@ $result = $conn->query($sql);
 <?php while ($post = $result->fetch_assoc()): ?>
 <div class="post">
     <div class="post-actions">
-        <a href="edit_post.php?id=<?php echo $post['id']; ?>">Edit</a>
-        <a class="delete" href="delete_post.php?id=<?php echo $post['id']; ?>">Delete</a>
+        <a href="edit_post.php?id=<?php echo $post['id']; ?>" class="no-link-style">Edit</a>
+        <a class="delete no-link-style" href="delete_post.php?id=<?php echo $post['id']; ?>">Delete</a>
     </div>
-    <h4><?php echo $post['title']; ?></h4>
-    <p><?php echo $post['content']; ?></p>
-    <a style="font-size: 0.8em; color: gray;">Posted on: <?php echo date('F j, Y, H:i', strtotime($post['created_at'])); ?></a>
+    <h4><a href="view_post.php?id=<?php echo $post['id']; ?>" class="no-link-style"><?php echo $post['title']; ?></a></h4>
+    <p><a href="view_post.php?id=<?php echo $post['id']; ?>" class="no-link-style"><?php echo $post['content']; ?></a></p>
+    <a style="font-size: 0.8em; color: gray;" class="no-link-style">Posted on: <?php echo date('F j, Y, H:i', strtotime($post['created_at'])); ?></a>
 </div>
 <?php endwhile; ?>
 </body>
