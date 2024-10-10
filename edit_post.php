@@ -26,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
 <title>Edit Post</title>
 </head>
 <body>
@@ -39,6 +40,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <br>
 <button type="submit">Update Post</button>
 </form>
-<a href="dashboard.php">Back to Dashboard</a>
+<a class="bottom-text" href="dashboard.php">Back to Dashboard</a>
 </body>
 </html>

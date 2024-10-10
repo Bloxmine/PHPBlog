@@ -46,6 +46,7 @@ p {
 }
 .post-actions {
     position: absolute;
+    top: 10px;
     right: 10px;
     display: flex;
     gap: 5px;
@@ -79,26 +80,4 @@ p {
 .no-link-style {
     color: inherit;
     text-decoration: none;
-}
-
-.post-container {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-}
-.post-actions {
-    margin-top: 20px;
-}
-.backbutton {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 10px;
 }

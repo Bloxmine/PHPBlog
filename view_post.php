@@ -18,13 +18,15 @@ $post = $result->fetch_assoc();
         <title><?php echo $post['title']; ?></title>
     </head>
 <body>
-<h2><?php echo $post['title']; ?></h2>
-<p><?php echo $post['content']; ?></p>
-<a style="font-size: 0.8em; color: gray;">Posted on: <?php echo date('F j, Y, H:i', strtotime($post['created_at'])); ?></a>
-<div class="post-actions">
-    <a href="edit_post.php?id=<?php echo $post['id']; ?>">Edit</a>
-    <a class="delete" href="delete_post.php?id=<?php echo $post['id']; ?>">Delete</a>
+<div class="post-container">
+    <h2><?php echo $post['title']; ?></h2>
+    <p><?php echo $post['content']; ?></p>
+    <a style="font-size: 0.8em; color: gray;">Posted on: <?php echo date('F j, Y, H:i', strtotime($post['created_at'])); ?></a>
+    <div class="post-actions">
+        <a href="edit_post.php?id=<?php echo $post['id']; ?>">Edit</a>
+        <a class="delete" href="delete_post.php?id=<?php echo $post['id']; ?>">Delete</a>
+    </div>
 </div>
-<a href="dashboard.php">Back to Dashboard</a>
+<a class="backbutton" href="dashboard.php">Back to Dashboard</a>
 </body>
 </html>
